@@ -23,22 +23,6 @@ AI Notes Workspace is a production-grade, full-stack SaaS application designed f
 | **Video Walkthrough** | 🎥 Watch | [YouTube Demo](https://youtube.com/watch?v=example) |
 
 ---
-
-## 🖼️ Screenshots
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/amankv1234/ai-notes-workspace/main/frontend/src/assets/hero.png" alt="Dashboard Overview" width="800" />
-  <p><i>The Main Workspace Dashboard featuring real-time analytics and note management.</i></p>
-</div>
-
-<br />
-
-| Login & Authentication | Note Editor & AI Magic |
-| :---: | :---: |
-| ![Login](https://via.placeholder.com/400x250/080808/3b82f6?text=Secure+Login) | ![Editor](https://via.placeholder.com/400x250/080808/3b82f6?text=AI+Note+Editor) |
-| **Productivity Analytics** | **Public Share Page** |
-| ![Analytics](https://via.placeholder.com/400x250/080808/3b82f6?text=Analytics+Charts) | ![Sharing](https://via.placeholder.com/400x250/080808/3b82f6?text=Public+Sharing) |
-
 ---
 
 ## 🚀 Key Features
@@ -300,8 +284,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## 👤 Author
 **Aman Kumar**
 - GitHub: [@amankv1234](https://github.com/amankv1234)
-- LinkedIn: [Aman Kumar](https://linkedin.com/in/aman-kumar)
-- Email: amankumar.dev@example.com
+- LinkedIn: [Aman Kumar][(https://linkedin.com/in/aman-kumar](https://www.linkedin.com/in/aman-kumar-vishwakarma-08b223304/))
+- Email: amankumarvishwakarma767@gmail.com
 
 ---
 
