@@ -24,23 +24,6 @@ AI Notes Workspace is a production-grade, full-stack SaaS application designed f
 
 ---
 
-## 🖼️ Screenshots
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/amankv1234/ai-notes-workspace/main/frontend/src/assets/hero.png" alt="Dashboard Overview" width="800" />
-  <p><i>The Main Workspace Dashboard featuring real-time analytics and note management.</i></p>
-</div>
-
-<br />
-
-| Login & Authentication | Note Editor & AI Magic |
-| :---: | :---: |
-| ![Login](https://via.placeholder.com/400x250/080808/3b82f6?text=Secure+Login) | ![Editor](https://via.placeholder.com/400x250/080808/3b82f6?text=AI+Note+Editor) |
-| **Productivity Analytics** | **Public Share Page** |
-| ![Analytics](https://via.placeholder.com/400x250/080808/3b82f6?text=Analytics+Charts) | ![Sharing](https://via.placeholder.com/400x250/080808/3b82f6?text=Public+Sharing) |
-
----
-
 ## 🚀 Key Features
 
 ### 🔐 Secure Authentication

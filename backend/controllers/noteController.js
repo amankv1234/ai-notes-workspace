@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const asyncHandler = require('express-async-handler');
 const Note = require('../models/noteModel');
+const AIUsageAnalytics = require('../models/aiUsageAnalyticsModel');
 const { generateFullAIInsights } = require('../services/aiService');
 
 // @desc    Fetch all notes with advanced filtering, search, and sorting
@@ -144,8 +145,7 @@ const getDashboardStats = asyncHandler(async (req, res) => {
     ]);
 
     // 4. AI Usage (From Analytics Model)
-    const AIUsageAnalytics = require('../models/aiUsageAnalyticsModel');
-    const aiStats = await AIUsageAnalytics.findOne({ userId }) || { totalAIRequests: 0, totalSummariesGenerated: 0 };
+    const aiStats = await AIUsageAnalytics.findOne({ user: userId }) || { totalAIRequests: 0, totalSummariesGenerated: 0 };
 
     // 5. Recent Notes
     const recentNotes = await Note.find({ userId, archived: false })
@@ -174,9 +174,19 @@ const generateNoteAI = asyncHandler(async (req, res) => {
 
         const insights = await generateFullAIInsights(note.content);
 
-        note.title = insights.suggested_title || note.title;
+        note.title = (note.title === 'New Note' || note.title === 'Untitled Note') ? (insights.suggested_title || note.title) : note.title;
         note.aiGeneratedSummary = insights.summary;
         note.aiActionItems = insights.action_items;
+
+        // Update Analytics
+        await AIUsageAnalytics.findOneAndUpdate(
+            { user: req.user._id },
+            { 
+                $inc: { totalAIRequests: 1, totalSummariesGenerated: 1 },
+                $set: { lastUsedAt: Date.now() }
+            },
+            { upsert: true, returnDocument: 'after' }
+        );
 
         const updatedNote = await note.save();
         res.json(updatedNote);
