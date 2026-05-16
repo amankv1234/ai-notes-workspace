@@ -237,15 +237,16 @@ npm run dev
 ### Backend (Render)
 1. Create a new **Web Service** on Render.
 2. Link your GitHub repository.
-3. Set the build command to `npm install`.
-4. Set the start command to `npm start`.
+3. Select **Docker** as the Runtime.
+4. **Important**: In the "Advanced" settings, set the **Docker Path** to `backend/Dockerfile`.
 5. Add all `.env` variables in the **Environment** tab.
 
 ### Frontend (Vercel)
 1. Create a new project on Vercel.
-2. Link the repository and set the root directory to `frontend`.
+2. Link the repository and set the **Root Directory** to `frontend`.
 3. Framework preset: **Vite**.
 4. Set `VITE_API_URL` as an environment variable pointing to your Render URL.
+
 
 ---
 
