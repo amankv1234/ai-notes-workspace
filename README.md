@@ -23,6 +23,7 @@ AI Notes Workspace is a production-grade, full-stack SaaS application designed f
 | **Video Walkthrough** | 🎥 Watch | [YouTube Demo](https://youtube.com/watch?v=example) |
 
 ---
+---
 
 ## 🚀 Key Features
 
@@ -283,8 +284,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## 👤 Author
 **Aman Kumar**
 - GitHub: [@amankv1234](https://github.com/amankv1234)
-- LinkedIn: [Aman Kumar](https://linkedin.com/in/aman-kumar)
-- Email: amankumar.dev@example.com
+- LinkedIn: [Aman Kumar][(https://linkedin.com/in/aman-kumar](https://www.linkedin.com/in/aman-kumar-vishwakarma-08b223304/))
+- Email: amankumarvishwakarma767@gmail.com
 
 ---
 
